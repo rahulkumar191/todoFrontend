@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header, #footer{
+    /* border: 2px solid red; */
+    max-width: 100%;
+    width: 350px;
+    padding: 10px 15px;
+}
+
+#header *{
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 6px;
+    /* outline: none; */
+    border: none;
+    border: 1.5px solid #808080;
+    text-transform: capitalize;
+}
+
+#header .heading{
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    border: 0px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-bottom: 2px solid black;
+    border-radius: 0;
+}
+
+#header input:focus {
+    outline-color: #0A6EBD;
+}
+
+#header #add-todo{
+    border: 0;
+    background-color: #3CCF4E;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* footer  */
+#footer .items .item{
+    background-color: #EDEDED;
+    padding: 10px 15px;
+    border: 1.5px solid #808080;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+#footer .item .content {
+    margin-bottom: 1rem;
+}
+#footer .item .content input{
+    width: 100%;
+}
+.edit-enable{
+    text-align: justify;
+    border: 0;
+    background-color: transparent;
+    outline: 0;
+}
+/* .enable-edit {
+    width: 100%;
+    border-width: 2px;
+    background-color: transparent;
+    outline-width: 2px;
+} */
+#footer .item .content .title{
+    /* all: unset; */
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+#footer .item .content .description{
+    /* all: unset; */
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#footer .item .buttons{
+    display: flex;
+    gap: 1rem;
+}
+#footer .item .buttons > div{
+    text-align: center;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    flex: 1 1;
+    cursor: pointer;
+    user-select: none;
+}
+#footer .item .buttons .edit-todo{
+    background-color: #0A6EBD;
+    
+}
+#footer .item .buttons .delete-todo{
+    background-color: #CF0A0A;
+    
+}
